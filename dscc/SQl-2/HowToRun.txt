@@ -1,0 +1,67 @@
+Step 1: Compile the Java Code
+
+Compile all the Java files using the javac command. Make sure you are in the directory where your Java files are located.
+
+bash
+
+javac Hello.java ImplExample.java Server.java Client.java Student.java
+
+Step 2: Start the RMI Registry (On the Server Side)
+
+Before running the server, you need to start the RMI registry. Open a new terminal or command prompt and run the following command:
+
+bash
+
+rmiregistry
+
+Step 3: Run the Server
+
+Open another terminal or command prompt and run the server:
+
+bash
+
+java Server
+
+The server should print "Server ready" if it starts successfully.
+Step 4: Run the Client
+
+Open another terminal or command prompt and run the client:
+
+bash
+
+java Client
+
+The client should connect to the server, retrieve the list of students from the MySQL database, and print their information.
+Notes:
+
+    Make sure your MySQL server is running.
+    Ensure that the MySQL JDBC driver JAR file is included in your classpath.
+    Update the MySQL database connection details (URL, username, and password) in ImplExample.java.
+    Ensure that the RMI registry is started on the default port (1099).
+    If you encounter any issues, check for error messages in the terminal or command prompt to diagnose the problem.\
+
+
+
+
+/////////////////////////
+Step 1: Set up MySQL database and create the Bill table:
+
+sql
+
+CREATE DATABASE Electric_Bill;
+USE Electric_Bill;
+
+CREATE TABLE Bill (
+    consumer_name VARCHAR(255),
+    bill_due_date DATE,
+    bill_amount DECIMAL(10, 2)
+);
+
+Step 2: Insert some sample data into the Bill table:
+
+sql
+
+INSERT INTO Bill (consumer_name, bill_due_date, bill_amount) VALUES
+('Consumer1', '2024-02-01', 150.00),
+('Consumer2', '2024-02-05', 200.50),
+('Consumer3', '2024-02-10', 120.75);

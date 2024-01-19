@@ -1,0 +1,65 @@
+Step 1: Compile the Java Code
+
+Compile all the Java files using the javac command in the terminal or command prompt. Make sure you are in the directory where your Java files are located.
+
+bash
+
+javac Hello.java ImplExample.java Server.java Client.java Student.java
+
+Step 2: Start the RMI Registry (On the Server Side)
+
+Before running the server, you need to start the RMI registry. Open a new terminal or command prompt and run the following command:
+
+bash
+
+rmiregistry
+
+Step 3: Run the Server
+
+Open another terminal or command prompt and run the server:
+
+bash
+
+java Server
+
+The server should print "Server ready" if it starts successfully.
+Step 4: Run the Client
+
+Open another terminal or command prompt and run the client:
+
+bash
+
+java Client
+
+The client should connect to the server, retrieve the list of students from the MySQL database, and print their information.
+Note:
+
+    Make sure your MySQL server is running.
+    Ensure that the MySQL JDBC driver JAR file is included in your classpath.
+    Update the MySQL database connection details (URL, username, and password) in ImplExample.java.
+    Ensure that the RMI registry is started on the default port (1099).
+    If you encounter any issues, check for error messages in the terminal or command prompt to diagnose the problem.
+
+
+//////////////
+    Set up MySQL database and create the Book table:
+
+sql
+
+CREATE DATABASE Library;
+USE Library;
+
+CREATE TABLE Book (
+    Book_id INT PRIMARY KEY,
+    Book_name VARCHAR(255),
+    Book_author VARCHAR(255)
+);
+
+    Insert some sample data into the Book table:
+
+sql
+
+INSERT INTO Book (Book_id, Book_name, Book_author) VALUES
+(1, 'Book1', 'Author1'),
+(2, 'Book2', 'Author2'),
+(3, 'Book3', 'Author3');

@@ -1,0 +1,40 @@
+Create a New Google Cloud Project:
+
+    Go to cloud.google.com.
+    Log in to your Google account.
+    Click on "Console" at the top right.
+    In the Cloud Console, click on "Current Project" and then click on "New Project."
+    Enter a name for your project and click "Create."
+
+Open Cloud Shell:
+
+    Once your project is created, click on the "Activate Cloud Shell" icon at the top right.
+
+Create a Directory and a Java File:
+
+    In the Cloud Shell terminal, enter the command mkdir symca to create a new directory named "symca."
+    Click on "Open Editor," then click on "New File."
+    Enter the file name as "demo.java" and select the "symca" directory. Click "OK."
+
+Write Java Code:
+
+    In the editor, enter the following Java code:
+
+    java
+
+    public class demo {
+        public static void main(String[] args) {
+            System.out.println("Atharva Kale C22059 NMITD");
+        }
+    }
+
+Save the File:
+
+    Save the file by clicking on the save icon in the editor.
+
+Compile and Run the Java Program:
+
+    Click on "Open Terminal" in the Cloud Shell.
+    Navigate to the "symca" directory by entering the command cd symca.
+    Compile the Java program using javac demo.java.
+    Run the compiled program using java demo.

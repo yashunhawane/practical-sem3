@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="client server chat application"/>
+	<classpathentry excluding="Multi-Threaded/" kind="src" path="CLIENT-SERVER COMMUNICATION"/>
+	<classpathentry kind="src" path="CLIENT-SERVER COMMUNICATION/Multi-Threaded"/>
+	<classpathentry kind="src" path="DATAGRAM"/>
+	<classpathentry kind="src" path="Date Time Server using RPC"/>
+	<classpathentry kind="src" path="multi-client chat server"/>
+	<classpathentry kind="src" path="RPC"/>
+	<classpathentry kind="src" path="SOCKET PROGRAMMING"/>
+	<classpathentry kind="src" path="SQL-1"/>
+	<classpathentry kind="src" path="SQl-2"/>
+	<classpathentry kind="src" path="TOKEN-RING PROTOCOL"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

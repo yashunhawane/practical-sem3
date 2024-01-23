@@ -1,0 +1,14 @@
+Hacking web servers, web applications:
+A. Hack a website by Remote File Inclusion
+B. Disguise as Google Bot to view Hidden Content of a Website
+1) Open Mozilla And type "https://www.whatismybrowser.com/"
+2) Open new tab and type url "https://useragentstring.com/Googlebot2.1_id_71.php"
+3) Again open a new tab and type "about:config"
+4) Now write the string which is present in user agent tab"general.useragent.override"(Dont ctrl+c,ctrl+v)
+5) Now select 'String' option and Click on '+' operator.Again Write "Googlebot/2.1 (+http://www.google.com/bot.html)"
+6) Click on correct sign
+7) Now again open new tab and search "whatsmybrowser.com". You will see the Googlebot2.0 is activated
+8) Now go back to about:config tab(3rd tab)
+9) Edit the msg as "This is a coustom browser for the movie Deadpool"(Don't copy,paste)
+10) Now again open new tab and search "whatsmybrowser.com" You will see the above line.
+C. How to use Kaspersky for Lifetime without Patch.

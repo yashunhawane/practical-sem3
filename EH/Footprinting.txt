@@ -1,0 +1,31 @@
+Footprinting and Reconnaissance:
+Using the software tools/commands to perform the following ,
+generate an analysis report :
+
+Footprinting is an ethical hacking technique used to gather as much data as possible about a specific targeted
+computer system, an infrastructure and networks to identify opportunities to penetrate them. It is one of the
+best methods of finding vulnerabilities.
+There are two types of footprinting in ethical hacking:
+1. active footprinting
+2. passive footprinting
+
+A. To perform footprinting using Google Hacking.
+1) Open Google
+2) Type "footprinting using Google Hacking"
+
+B. To find out the information about the a website.
+1) Open Google
+2) Type "https://web.archive.org/"
+3) Enter a url or site Ex."www.wikipedia.com" 
+
+C. To find the information about an archived website.
+1) Open Google
+2) Type "https://web.archive.org/"
+3) Enter a url or site Ex."nmitd.edu.in"(Archive Site)
+
+D. To trace any received email and generate a report.
+
+E. To fetch DNS information.
+1) Open Terminal(win + r)
+2) Type - command-1 "nmap www.wikipedia.com" / "nmap www.instagram.com" / "nmap nmitd.edu.in"
+          command-2 "nmap -p 1-200 www.google.com" / "nmap -p 1-200 nmap nmitd.edu.in"

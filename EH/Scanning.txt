@@ -1,0 +1,72 @@
+Scanning networks, Enumeration and sniffing:
+Using the software tools/commands to perform the following ,
+generate an analysis report :
+
+Network scanning is the process of identifying active devices on a network, discovering open ports, 
+and gathering information about the network structure. This technique is commonly used for both legitimate 
+and malicious purposes. Legitimate uses include network administration, security assessments, 
+and troubleshooting, while malicious uses involve identifying vulnerabilities for potential exploitation.
+
+Network scanning tools, both open-source and commercial, are widely available. 
+Examples include Nmap, Nessus, Wireshark, and others. It's important to note that unauthorized 
+or malicious network scanning can violate ethical and legal standards. Organizations should 
+conduct scanning activities within a well-defined scope, with proper authorization, and in 
+compliance with applicable laws and regulations to ensure the security and privacy of the network and its users.
+
+Enumeration, in the context of computer security and network penetration testing, refers to the 
+process of extracting information about a target system or network to gather details that might be 
+useful for further exploitation. Enumerating a system involves systematically extracting information 
+about users, shares, services, and other resources. This phase is a critical step in the reconnaissance 
+stage of ethical hacking and penetration testing.
+
+In the context of computer networks and cybersecurity, "sniffing" refers to the practice of intercepting 
+and inspecting network traffic. This is typically done using specialized tools or software designed for 
+network sniffing. The primary purpose of network sniffing is to capture and analyze the data being transmitted 
+over a network, which can include sensitive information such as passwords, usernames, or other confidential data.
+
+
+A] Port scanning . Open Terminal(win + r)
+1. Display the following for ip address 127.0.0.1 or any other ip address
+
+a. Scan open ports (syntax: nmap –open ip_address / url )
+1) Type - command-1 "nmap -open www.wikipedia.com"
+2) Type - command-2 "nmap -open (ipaddress of your PC)"
+
+b. Scan ports (syntax: nmap ip_address / url )
+1) Type - command-1 "nmap www.wikipedia.com"
+2) Type - command-2 "nmap (ipaddress of your PC)"
+
+c. Scan single port (syntax: nmap -p 80 ip_address)
+1) Type - command "nmap -p 80 (ipaddress of your PC)"
+
+d. Scan specified range of ports (syntax: nmap -p 1-200 ip_address)
+1) Type - command "nmap -p 1-200 (ipaddress of your PC)"
+
+e. Scan entire port range (syntax: nmap -p 1-65535 ip_address)
+1) Type - command "nmap -p 1- 65535(ipaddress of your PC)"
+
+f. Scan top 100 ports (fast scan) (syntax: nmap -F ip_address)
+1)  Type - command- "nmap -f (ipaddress of your PC)"
+
+
+B] Network scanning tools Open Terminal(win + r)
+a. Ping Scan (syntax: nmap -sP <IP Address>)
+1) Type - command- "nmap -sP 103.108.220.91"
+
+b. Host Scan (syntax: nmap -sP <target IP Range>)
+1) Type - command- "nmap -sP 72.52.251.71"
+
+c. UDP Scan (syntax: nmap -sU <target>)
+1) Type - command- "nmap -sU www.google.com"
+
+d. OS Detection Scan (syntax: nmap -sO <target>)
+1) Type - command- "nmap -sO www.google.com"
+
+e. Version Scan Scan (syntax: nmap -sV <target>)
+1) Type - command- "nmap -sV www.google.com"
+
+
+C] IDS tool
+D] Sniffing tool
+  Use Wireshark
+
